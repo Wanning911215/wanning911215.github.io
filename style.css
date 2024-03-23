@@ -1,0 +1,182 @@
+header {
+    background-color: #d4a373;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    color: whitesmoke;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+.news {
+    background-color: #faedcd;
+    color: black;
+    text-align: center;
+    height: 115vw;
+    background-image: url("DSCF3695.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news h2 {
+    font-size: 200%;
+    margin-top: 100px;
+    background-color: #faedcd;
+    padding: 20px;
+}
+
+.news p {
+    background-color: #faedcd;
+    font-size: 100%;
+    padding: 20px;
+}
+
+.news a {
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px whitesmoke solid;
+    solid;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.slogan {
+    background-color: #d4a373;
+    color: black;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.quote {
+    display: flex;
+}
+
+.quote img {
+    width: 50%;
+}
+
+.quote h2 {
+    text-align: center;
+}
+
+.info {
+    width: 50%;
+    background-color: #faedcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    text-align: center;
+    line-height: 2em;
+}
+
+footer {
+    background-color: black;
+    color: #B7B7B7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* Responsive Web Design */
+@media screen and (max-width:768px) {
+    header ul {
+        display: none;
+    }
+
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .news h2 {
+        font-size: 10％;
+        padding: 10px;
+
+    }
+
+    .menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .quote {
+        flex-direction: column;
+    }
+
+    .quote img {
+        width: 100%;
+
+    }
+
+    .info {
+        width: 100%;
+        padding: 40px 0;
+
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+}
